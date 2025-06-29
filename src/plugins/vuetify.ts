@@ -10,10 +10,16 @@ import 'vuetify/styles'
 
 // Composables
 import { createVuetify } from 'vuetify'
+import { VRow } from 'vuetify/components'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
+  defaults: {
+    VRow: {
+      class: 'ma-0'
+    }
+  },
   theme: {
-    defaultTheme: 'dark',
+    defaultTheme: 'light',
   },
 })
